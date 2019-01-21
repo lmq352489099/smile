@@ -1,0 +1,31 @@
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<body>
+    a<input type="text" id="a"><br>
+    b<input type="text" id="b"><br>
+    <button onclick="test()">click</button>
+    <button onclick="c()">clear</button>
+    <script>
+    $("input").each(function(){                               //遍历input标签给其赋值
+        var key = $(this).attr('id');
+        $(this).val(localStorage.getItem(key));
+     
+    })
+     
+        function test(){
+            alert(123)
+            $("input").each(function(){              //遍历input标签将第一次的值存到localStorage中
+                var key = $(this).attr('id');
+                var value = $(this).val();
+                localStorage.setItem(key,value);
+             
+            })
+        }
+         
+         
+        function c(){                      //清除本地存储
+            localStorage.clear();      
+        }
+         
+    </script>
+    
+    </body>

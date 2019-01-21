@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>smile</title>
+  <style>
+    /* .lmq { */
+      /* position: absolute; */
+      /* animation: lmq 5s infinite;
+      width: 200px;
+      height: 200px;
+      background: red;
+    } */
+
+    /* @keyframes lmq {
+      form {
+        transform: rotateX(0deg);
+      }
+
+      to {
+        transform: rotateX(360deg);
+      }
+    } */
+
+  </style>
+
+
+</head>
+
+<body>
+  <div id="app">
+
+    
+  </div>
+  <!-- built files will be auto injected -->
+  <script>
+    let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth
+    let htmlDom = document.getElementsByTagName("html")[0]
+    if (htmlWidth > 750) {
+      htmlWidth = 750
+    }
+    htmlDom.style.fontSize = htmlWidth / 20 + 'px';
+
+  </script>
+</body>
+
+</html>
